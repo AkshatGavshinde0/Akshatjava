@@ -1,8 +1,12 @@
-public class Revrse  {
+public class Revrse{
     public static void main(String[] args) {
-        String str = "Hello World";
-        String reversed = new StringBuilder(str).reverse().toString();
-        System.out.println(reversed); // Output: dlroW olleH
-    }
+int number = 12345;
+int reverse = 0;
+for (; number != 0; number /= 10) {
+    int digit = number % 10;
+    reverse = reverse * 10 + digit;
+}
+System.out.println("Reverse: " + reverse);
+}
 }
 
